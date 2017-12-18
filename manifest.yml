@@ -1,0 +1,14 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: watson-chat-jumpstart-app
+  host: watson-chat-jumpstart-app
+  disk_quota: 1024M
+  buildpack: sdk-for-nodejs
+  random-route: false
+  services:
+    - Conversation
+    - Discovery
+    - Tone Analyzer

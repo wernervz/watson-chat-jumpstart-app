@@ -1,0 +1,15 @@
+{
+  "extends": ["loopback", "standard"],
+  "rules": {
+    "max-len": "off"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jasmine": true
+  },
+  "globals": {
+    "WebSocket": true
+  },
+  "plugins": ["jasmine"]
+}

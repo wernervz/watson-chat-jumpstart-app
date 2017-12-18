@@ -1,0 +1,62 @@
+{
+  "conversation": [
+    {
+      "credentials": {
+        "url": "https://gateway.watsonplatform.net/conversation/api",
+        "password": "",
+        "username": ""
+      },
+      "syslog_drain_url": null,
+      "label": "conversation",
+      "provider": null,
+      "plan": "free",
+      "name": "Conversation-service-name",
+      "tags": [
+        "watson",
+        "ibm_created"
+      ]
+    }
+  ],
+  "discovery": [
+    {
+      "credentials": {
+        "url": "https://gateway.watsonplatform.net/discovery/api",
+        "username": "",
+        "password": ""
+      },
+      "syslog_drain_url": null,
+      "volume_mounts": [],
+      "label": "discovery",
+      "provider": null,
+      "plan": "standard",
+      "name": "Discovery-service-name",
+      "tags": [
+        "watson",
+        "ibm_created",
+        "ibm_dedicated_public",
+        "lite"
+      ]
+    }
+  ],
+  "tone_analyzer": [
+    {
+      "credentials": {
+        "url": "https://gateway.watsonplatform.net/tone-analyzer/api",
+        "username": "",
+        "password": ""
+      },
+      "syslog_drain_url": null,
+      "volume_mounts": [],
+      "label": "tone_analyzer",
+      "provider": null,
+      "plan": "standard",
+      "name": "Tone Analyzer-service-name",
+      "tags": [
+        "watson",
+        "ibm_created",
+        "ibm_dedicated_public",
+        "lite"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+node_modules
+client/node_modules
+kubernetes
+npm-debug.log
+dist
+getting-started
+spec
+env-vars.json
+manifest.yml
+mem_db.json
+vcap-local.json
+.docker-env

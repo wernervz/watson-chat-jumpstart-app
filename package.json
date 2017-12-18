@@ -1,0 +1,62 @@
+{
+  "name": "watson-chat-hacker-kit",
+  "version": "0.0.1",
+  "main": "server/server.js",
+  "engines": {
+    "node": "^8.4.0",
+    "npm": "^5.4.0"
+  },
+  "scripts": {
+    "browsersync": "browser-sync start --proxy 'localhost:3000' --port 3001 --files 'dist/client/**/*.*'",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "build:client": "(cd ./client && npm run build)",
+    "build:client-prod": "(cd ./client && npm run build-prod)",
+    "start": "path-exists dist/client && node . || echo 'no built client detected.'",
+    "serve": "(cd ./client && npm run build) && concurrently \"node .\" \"sleep 5 && opener http://localhost:3000\"",
+    "watch:client": "(cd ./client && npm run develop)",
+    "watch:server": "nodemon --watch ./server --watch ./common",
+    "init": "npm install",
+    "postinstall": "path-exists client && (cd ./client && npm install) || echo 'client dependencies are skipped in production'",
+    "develop": "concurrently \"npm run watch:client\" \"npm run watch:server\" \"sleep 20 && npm run browsersync\"; exit 0",
+    "test": "jasmine"
+  },
+  "dependencies": {
+    "cfenv": "^1.0.3",
+    "compression": "^1.7.0",
+    "debug": "^3.0.1",
+    "fs-sync": "^1.0.3",
+    "helmet": "^3.8.1",
+    "loopback": "^3.11.1",
+    "loopback-boot": "^2.26.1",
+    "loopback-component-explorer": "^5.0.0",
+    "path-exists-cli": "^1.0.0",
+    "serve-favicon": "^2.0.1",
+    "strong-error-handler": "^2.2.0",
+    "watson-developer-cloud": "^2.42.0",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "concurrently": "^3.5.0",
+    "eslint": "^3.17.1",
+    "eslint-config-loopback": "^8.0.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jasmine": "^2.8.4",
+    "eslint-plugin-node": "^4.2.3",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jasmine": "^2.8.0",
+    "nodemon": "^1.12.0",
+    "nsp": "^2.7.0",
+    "opener": "^1.4.3",
+    "validator": "^7.0.0"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "license": "Apache-2.0",
+  "description": "watson-chat-hacker-kit"
+}

@@ -1,0 +1,14 @@
+{
+  "LOG_LEVEL": "info",
+  "CONVERSATION_API_USER": {"expr": "Conversation.*", "field": "credentials.username"},
+  "CONVERSATION_API_PASSWORD": {"expr": "Conversation.*", "field": "credentials.password"},
+  "CONVERSATION_WORKSPACE_ID": "", 
+  "DISCOVERY_USERNAME": {"expr": "Discovery.*", "field": "credentials.username"},
+  "DISCOVERY_PASSWORD": {"expr": "Discovery.*", "field": "credentials.password"},
+  "DISCOVERY_API_VERSION": "2017-11-07",
+  "DISCOVERY_ENV_ID": "",
+  "DISCOVERY_COLLECTION_ID": "",
+  "TONE_API_USER":{"expr": "Tone Analyzer.*", "field": "credentials.username"},
+  "TONE_API_PASSWORD":{"expr": "Tone Analyzer.*", "field": "credentials.password"},
+  "TONE_API_VERSION": "2017-09-21"
+}
